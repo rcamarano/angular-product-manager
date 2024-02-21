@@ -8,7 +8,7 @@ export class ProductService {
 
   constructor() { }
 
-  addProduct(product: string) {
+  addProduct(product: string, price: number, quantity: number) {
     this.products.push(product);
   }
 
@@ -16,7 +16,7 @@ export class ProductService {
     return this.products;
   }
 
-  // clearProducts() {
-  //   this.products = [];
-  // }
+  clearProducts() {
+    this.products = [];
+  }
 }

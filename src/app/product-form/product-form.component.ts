@@ -15,6 +15,6 @@ export class ProductFormComponent implements OnInit {
   }
 
   addProduct(productName: string) {
-    this.productService.addProduct(productName);
+    this.productService.addProduct(productName, 0, 0);
   }
 }

@@ -16,13 +16,13 @@ import { CommonModule } from '@angular/common';
 export class ProductListComponent implements OnInit {
   products: string[] = [];
 
-  
-  constructor(private productService: ProductService) { }
-  
-  ngOnInit(): void {
-    this.products = this.productService.getProducts();
-  }
   clearList() {
     this.products = []; // Empty the products array
+  }
+
+  constructor(private productService: ProductService) { }
+
+  ngOnInit(): void {
+    this.products = this.productService.getProducts();
   }
 }
