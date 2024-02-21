@@ -15,4 +15,8 @@ export class ProductService {
   getProducts() {
     return this.products;
   }
+
+  // clearProducts() {
+  //   this.products = [];
+  // }
 }
