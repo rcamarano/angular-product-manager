@@ -18,12 +18,7 @@ export class ProductListComponent implements OnInit {
 
   clearList() {
     this.products = []; // Empty the products array
-    // this.reloadProducts(); // Reload the list of products
   }
-
-  // reloadProducts() {
-  //   this.products = this.productService.getProducts();
-  // }
 
   constructor(private productService: ProductService) { }
 
