@@ -18,7 +18,7 @@ export class ProductFormComponent implements OnInit {
     return this.productService.getProducts();
   }
 
-  addProduct() {
-    this.productService.addProduct('product');
+  addProduct(productName: string) {
+    this.productService.addProduct(productName);
   }
 }

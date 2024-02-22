@@ -1,7 +1,7 @@
 <div>
     <h2>Add Product</h2>
     <input type="text" placeholder="Enter product name" #productName>
-    <button (click)="addProduct()">Add</button>
+    <button (click)="addProduct(productName.value)">Add</button>
     <!-- <br>
     <input type="text" placeholder="Enter product price" #productPrice>
     <button (click)="addProduct(productPrice.value)">Add</button>
