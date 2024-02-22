@@ -17,6 +17,6 @@ export class ProductService {
   }
 
   clearProducts() {
-    this.products = [];
+   location.reload();
   }
 }
