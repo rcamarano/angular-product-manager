@@ -8,7 +8,7 @@ export class ProductService {
 
   constructor() { }
 
-  addProduct(product: string, price: number, quantity: number) {
+  addProduct(product: string) {
     this.products.push(product);
   }
 

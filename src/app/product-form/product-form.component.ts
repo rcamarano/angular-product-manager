@@ -14,7 +14,11 @@ export class ProductFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addProduct(productName: string) {
-    this.productService.addProduct(productName, 0, 0);
+  getProducts() {
+    return this.productService.getProducts();
+  }
+
+  addProduct() {
+    this.productService.addProduct('product');
   }
 }
